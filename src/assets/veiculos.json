@@ -1,0 +1,64 @@
+[{ 
+    "categoria": { 
+        "tipo": "Carro econômico com ar",
+        "descricao": "Chevrolet celta, ford fiesta, vw gol, fiat palio ou similar"
+    },
+    "img": "./assets/veiculos/gol.jpeg",
+    "codigoTaxa": "IFMR",
+    "detalhes": [
+        "Quilometragem livre",
+        "Seguro total do veículo",
+        "Seguro a terceiros",
+        "Taxa de serviços inclusas"
+    ],
+    "maisDetalhes": "Quilometragem livre, Seguro total do veículo, Seguro a terceiros, Taxa de serviços inclusas",
+    "locacao": {
+        "valor": 938.00,
+        "desconto": 0.2,
+        "taxaInclusa": true,
+        "qtParcelas": 10
+    },
+    "descricao": {
+        "qtdPortas": 4,
+        "qtdPessoas": 5,
+        "qtdMalas": 3,
+        "arCondicionado": true,
+        "transmissao": "Automático",
+        "direcaoHidraulica": true,
+        "vidroEletrico": true,
+        "cd": true,
+        "radio": true
+    }
+},
+{ 
+    "categoria": { 
+        "tipo": "Carro econômico com ar",
+        "descricao": "Chevrolet celta, ford fiesta, vw gol, fiat palio ou similar"
+    },
+    "img": "./assets/veiculos/gol.jpeg",
+    "codigoTaxa": "IFMR",
+    "detalhes": [
+        "Quilometragem livre",
+        "Seguro total do veículo",
+        "Seguro a terceiros",
+        "Taxa de serviços inclusas"
+    ],
+    "maisDetalhes": "Quilometragem livre, Seguro total do veículo, Seguro a terceiros, Taxa de serviços inclusas",
+    "locacao": {
+        "valor": 938.00,
+        "desconto": 0,
+        "taxaInclusa": true,
+        "qtParcelas": 0
+    },
+    "descricao": {
+        "qtdPortas": 4,
+        "qtdPessoas": 5,
+        "qtdMalas": 3,
+        "arCondicionado": true,
+        "transmissao": "Automático",
+        "direcaoHidraulica": true,
+        "vidroEletrico": true,
+        "cd": true,
+        "radio": true
+    }
+}]

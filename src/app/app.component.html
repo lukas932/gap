@@ -1,0 +1,24 @@
+<div *ngFor="let veiculo of veiculos">
+    <img [src]="veiculo.img" />
+    <p>{{ veiculo.categoria.tipo }}</p>
+    <p>{{ veiculo.codigoTaxa }}</p>
+    <p>{{ veiculo.categoria.descricao }}</p>
+    <p *ngFor="let detalhe of veiculo.detalhes">- {{ detalhe }}</p>
+    <span>Ver detalhes</span>
+    <p>{{ veiculo.maisDetalhes }}</p>
+    <p *ngIf="veiculo.locacao.desconto">Desconto: {{ veiculo.locacao.desconto * 100 }}%</p>
+    <p *ngIf="veiculo.locacao.desconto">De: {{ veiculo.locacao.valor | currency:'BRL' }}</p>
+    <p *ngIf="veiculo.locacao.desconto">Por: {{ desconto(veiculo.locacao.valor, veiculo.locacao.desconto) | currency:'BRL' }}</p>
+    <p *ngIf="!veiculo.locacao.desconto">{{ desconto(veiculo.locacao.valor, veiculo.locacao.desconto) | currency:'BRL' }}</p>
+    <p *ngIf="veiculo.locacao.qtParcelas">Em até {{ veiculo.locacao.qtParcelas }}x</p>
+    <p>Taxas inclusas: {{ veiculo.locacao.taxaInclusa?'Sim':'Não' }}</p>
+    <p>{{veiculo.descricao.qtdPortas}} portas</p>
+    <p>{{veiculo.descricao.qtdPessoas}} pessoas</p>
+    <p>{{veiculo.descricao.qtdMalas}} malas</p>
+    <p *ngIf="veiculo.descricao.arCondicionado">Ar-condicionado</p>
+    <p>{{veiculo.descricao.transmissao}}</p>
+    <p *ngIf="veiculo.descricao.direcaoHidraulica">Direção hidráulica</p>
+    <p *ngIf="veiculo.descricao.vidroEletrico">Vidro elétrico</p>
+    <p *ngIf="veiculo.descricao.cd">CD ou USB</p>
+    <p *ngIf="veiculo.descricao.radio">Rádio AM/FM</p>
+</div>
